@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
-}
+/* Gradient Background */
+body {
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(38, 38, 77);
+    overflow-x: hidden;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .fullPageMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(71, 71, 145), rgb(33, 33, 68));
+    color: white;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    text-align: center;
+  }
+  
+  .loadingDot {
+    display: inline-block;
+    animation: bounce 1s infinite ease-in-out;
+    margin-left: 2px;
+  }
+  
+  .loadingDot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .loadingDot:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  
+  .loadingDot:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes bounce {
+    0%{
+      transform: translateY(0px);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+    50%{
+      transform: translateY(5px);
+    }
+    75%{
+      transform: translateY(0px);
+    }
+  }
+  
+  
+  /* Centered Header Styling */
+  .header {
+    font-family: "Arial", sans-serif; /* Modify later */
+    margin: 0;
+    color: rgb(228, 228, 228); /* Modify later */
+    padding: 20px; /* Modify later */
+    padding-bottom: 0;
+    font-size: 3em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Modify later */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    cursor: default;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .subHeader {
+    font-family: "Arial", sans-serif; /* Modify later */
+    color: rgb(228, 228, 228); /* Modify later */
+    margin: 0;
+    padding: 10px; /* Modify later */
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Modify later */
+    transition: transform 0.3s ease-in-out;
+    cursor: default;
+  }
+
+  .subHeader span {
+    animation: slideInFromTop 0.5s ease-out;
+  }
+  
+  /* Hover Effect */
+  .header:hover, .subHeader:hover {
+    color: white;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+  }
+
+  /* Blurry overlay bars */
+@media (min-width: 1200px) {
+  body::before, body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 10%; /* Width of the blurry bars */
+    background: rgba(0, 0, 20, 0.3); /* Semi-transparent black background */
+    backdrop-filter: blur(2px); /* Blurring effect */
+    z-index: 10; /* Ensure it's above the content */
+  }
+
+  /* Left blurry overlay bar */
+  body::before {
+    left: 0;
+  }
+
+  /* Right blurry overlay bar */
+  body::after {
+    right: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
 }
+

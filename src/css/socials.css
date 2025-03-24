@@ -1,0 +1,46 @@
+/* Centering the main div */
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the main content */
+    text-align: center; /* Center the text */
+    margin: 4rem auto; /* Add some spacing */
+    padding-bottom: 2.5rem;
+    width: 100%
+  }
+  
+  /* Styling for the icons container */
+  .socialIcons {
+    display: flex;
+    justify-content: space-evenly; /* Space icons evenly */
+    width: 100%; /* Adjust width as necessary */
+    max-width: 700px;
+    margin-top: 1rem; /* Add some spacing above icons */
+  }
+  
+  /* Optionally, you can add hover effects for icons */
+  .socialIcons a {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .socialIcons a:hover {
+    transform: scale(1.5); /* Slightly enlarge on hover */
+  }
+  
+  .socialLinks h1 {
+    font-size: 2.5rem;
+    color: rgb(70, 247, 79); /* Change this color if needed */
+    text-shadow: 2px 2px 4px rgb(54, 180, 60);
+    margin-bottom: 1rem;
+    cursor: default;
+    transition: transform 0.3s ease-in-out, text-shadow .3s ease-in-out;
+  }
+
+  .socialLinks h1:hover {
+    transform: scale(1.05);
+    color: rgb(82, 255, 90); /* Change color on hover */
+    text-shadow: 2px 2px 8px rgb(74, 201, 80);
+  }
+
+
+  

@@ -1,0 +1,37 @@
+.moving-lines-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  /* Common line styles */
+  .moving-line {
+    position: absolute;
+    opacity: 0.7;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Animations */
+  @keyframes move-horizontal {
+    from {
+      left: -5vw;
+    }
+    to {
+      left: 105vw;
+    }
+  }
+  
+  @keyframes move-vertical {
+    from {
+      top: -5vh;
+    }
+    to {
+      top: 105vh;
+    }
+  }
+  

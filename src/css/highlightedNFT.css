@@ -1,0 +1,166 @@
+.highlightedCollection {
+    width: 100vw;
+    max-width: 900px;
+    margin: 5rem auto;
+    cursor: default;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.highlightedCollectionContent {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.highlightedCollection h1,
+.highlightedCollection h3 {
+    font-family: Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(238, 255, 162, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.highlightedCollection h1 {
+    font-size: 3rem;
+    color: rgb(228, 228, 228);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    text-indent: 1rem;
+    margin: 0.5rem 0;
+}
+
+.highlightedCollection h3 {
+    font-size: 1.5rem;
+    color: rgb(248, 248, 151);
+    margin-bottom: -5px;
+}
+
+.highlightedCollection h1:hover
+{
+    color: white;
+    transform: scale(1.02);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+}
+
+.highlightedCollection h3:hover,
+.collectionText p strong:hover{
+    color: rgb(247, 247, 171);
+    text-shadow: 2px 2px 8px rgba(238, 252, 175, 0.5);
+    transform: scale(1.02);
+}
+
+.collectionLink {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.collectionImage {
+    width: 100%;
+    border-radius: 1em;
+    border: 3px solid rgb(248, 248, 151);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.collectionImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 5px rgba(248, 248, 151, 0.8);
+}
+
+.collectionText {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.collectionText p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-family: Verdana, sans-serif;
+    color: rgb(228, 228, 228);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1em;
+    margin-top: 0.3rem;
+}
+
+.collectionText p strong {
+    color: rgb(248, 248, 151);
+    text-shadow: 2px 2px 4px rgba(238, 255, 162, 0.5);
+    font-size: 1.5rem;
+}
+
+.highlightedCollectionStats {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    font-size: 1rem;
+    font-family: "Courier New", monospace;
+    color: rgb(228, 228, 228);
+    width: 95%;
+    padding: 1em;
+    padding-left: 0;
+}
+
+.highlightedCollectionStats h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-indent: 2rem;
+    color: rgb(228, 228, 228);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.highlightedCollectionStats p {
+    text-indent: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .highlightedCollectionContent {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .highlightedCollection h3{
+        font-size: 1.3rem;
+    }
+
+    .collectionLink {
+        width: 100%;
+        margin: 0;
+    }
+
+    .collectionImage {
+        max-width: 90%;
+        margin-bottom: -2rem;
+    }
+
+    .collectionText {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .highlightedCollectionStats{
+        padding: .3em;
+    }
+
+    .highlightedCollectionStats h2{
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+        text-indent: 0;
+    }
+
+    .highlightedCollectionStats p strong{
+        text-indent: 0;
+        font-size: 1.2rem;
+    }
+    .highlightedCollectionStats p {
+        text-indent: 0;
+        font-size: 1.2rem;
+    }
+}

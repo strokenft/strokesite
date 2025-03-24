@@ -51,8 +51,9 @@
 .collectionLink {
     display: flex;
     justify-content: center;
-    max-width: 600px;
+    max-width: 500px;
     width: 50%;
+    
 }
 
 .collectionImage {

@@ -17,7 +17,7 @@ const StrokelandSection = () => {
 
           {/* Toggle Button */}
           <button className="readMoreButton" onClick={() => setIsExpanded(!isExpanded)}>
-            {isExpanded ? "Show Less ⮝" : "Read More ⮟"}
+            {isExpanded ? "Show Less" : "Read More"}
           </button>
 
           {/* Expandable Content */}

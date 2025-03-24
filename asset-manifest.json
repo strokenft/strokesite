@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8ed1000.css",
-    "main.js": "/static/js/main.70af3b0c.js",
-    "static/media/IMG_1716.png": "/static/media/IMG_1716.c2ea101d0b4b860d32ae.png",
-    "static/media/tiktok.png": "/static/media/tiktok.301c66c24289765a667a.png",
-    "static/media/discord.png": "/static/media/discord.67ffc13f6e024c03cd1f.png",
-    "static/media/opensea.png": "/static/media/opensea.2065e3954873ef58b55b.png",
-    "index.html": "/index.html",
-    "main.c8ed1000.css.map": "/static/css/main.c8ed1000.css.map",
-    "main.70af3b0c.js.map": "/static/js/main.70af3b0c.js.map"
+    "main.css": "/strokesite/static/css/main.c8ed1000.css",
+    "main.js": "/strokesite/static/js/main.3474b0ac.js",
+    "static/media/IMG_1716.png": "/strokesite/static/media/IMG_1716.c2ea101d0b4b860d32ae.png",
+    "static/media/tiktok.png": "/strokesite/static/media/tiktok.301c66c24289765a667a.png",
+    "static/media/discord.png": "/strokesite/static/media/discord.67ffc13f6e024c03cd1f.png",
+    "static/media/opensea.png": "/strokesite/static/media/opensea.2065e3954873ef58b55b.png",
+    "index.html": "/strokesite/index.html",
+    "main.c8ed1000.css.map": "/strokesite/static/css/main.c8ed1000.css.map",
+    "main.3474b0ac.js.map": "/strokesite/static/js/main.3474b0ac.js.map"
   },
   "entrypoints": [
     "static/css/main.c8ed1000.css",
-    "static/js/main.70af3b0c.js"
+    "static/js/main.3474b0ac.js"
   ]
 }

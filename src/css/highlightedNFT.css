@@ -5,12 +5,12 @@
     cursor: default;
     display: flex;
     margin-bottom: 1rem;
+    justify-content: space-evenly;
 }
 
 .highlightedCollectionContent {
     display: flex;
-    gap: 1.5rem;
-    width: 100%;
+    width: 40%;
 }
 
 .highlightedCollection h1,
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     max-width: 600px;
-    width: 100%;
+    width: 50%;
 }
 
 .collectionImage {
@@ -116,6 +116,10 @@
 }
 
 @media (max-width: 1024px) {
+
+    .highlightedCollection{
+        flex-direction: column;
+    }
     .highlightedCollectionContent {
         flex-direction: column;
         align-items: center;
@@ -124,12 +128,13 @@
     }
 
     .highlightedCollection h3{
+        margin-top: 3rem;
         font-size: 1.3rem;
     }
 
     .collectionLink {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .collectionImage {

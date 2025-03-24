@@ -12,10 +12,10 @@ const HighlightedNFT = ({ data }) => {
 
   return (
     <div className="highlightedCollection">
-      <div className="highlightedCollectionContent">
-        <a href="https://opensea.io/collection/strokernft" className="collectionLink" target="_blank" rel="noopener noreferrer">
+      <a href="https://opensea.io/collection/strokernft" className="collectionLink" target="_blank" rel="noopener noreferrer">
           <img src={data.image_url} alt={data.name} className="collectionImage" />
         </a>
+      <div className="highlightedCollectionContent">
         <div className="collectionText">
           <h3>Highlighted Collection:</h3>
           <h1>{data.name}</h1>

@@ -14,8 +14,8 @@ function App() {
   const [adjective, setAdjective] = useState("");
   const adjectives = ["truly", "incredibly", "remarkably", "super", "unbelievably", "insanely", "highly"];
   const [loading, setLoading] = useState(true);
-
-  const api_key = "c4813e37c65946f698f3d7f1a198c4bc";
+  
+  const api_key = process.env.REACT_APP_AUTH_TOKEN;
   const url = "https://api.opensea.io/api/v2/collections/strokernft";
   const collectionsUrl = "https://api.opensea.io/api/v2/collections?creator_username=TheStrokeKing";
   const nftsUrl = "https://api.opensea.io/api/v2/collection/strokernft/nfts?limit=10";
